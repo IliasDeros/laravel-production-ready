@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    command: sh -c "composer install; php-fpm"
+    restart: always
+    working_dir: /var/www/
+    volumes:
+      - ./src:/var/www
