@@ -22,8 +22,9 @@ docker-compose up
 
 ## Deploying to production
 
-For complex apps with multiple microservices, you can refer to the kubernetes-ready script at`src/blog/tools/travis/deploy/production.sh`
-For a simple php app like this one, you only need to dockerize the application, and connect to your existing database & cache.
+For **complex apps** with multiple microservices, you can refer to the kubernetes-ready script at`src/blog/tools/travis/deploy/production.sh`
+
+For a **simple laravel app** like this one, you only need to dockerize the application, and connect to your existing database & cache.
 ```sh
 cd src/blog/
 docker-compose build web
